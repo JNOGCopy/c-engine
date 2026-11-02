@@ -1,11 +1,13 @@
 #pragma once
 
 #include <cstddef>
+#include <iterator>
 
 typedef struct {
   void *data;
   size_t capacity;
   size_t size_data;
+  size_t real_capacity;
 } list;
 
 list create_list(size_t capacity, size_t size_data);
