@@ -1,3 +1,4 @@
+#include "adstore/dict.h"
 #include <ctime>
 #include <stdio.h>
 #include <adstore/list.h>
@@ -11,6 +12,8 @@ void delay(float num){
 
 int main(){
   adlist lis = CREATE_ADLIST(int, 11);
+  size_t hash = get_str_hash("Hello world!!!");
+  printf("%lu", hash);
   set_adlist_element(&lis, 11, (void*)(int[]){ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 0); 
   while (!is_adlist_empty(&lis)){
     int push = *(int *)get_adlist_element(&lis, 0); remove_at_adlist(&lis, 0);
