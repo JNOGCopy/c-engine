@@ -1,0 +1,32 @@
+[
+  {
+    "file": "./src/list.c",
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-g",
+      "-Iinclude",
+      "-c",
+      "./src/list.c",
+      "-o",
+      "./build/out/list.o"
+    ],
+    "directory": "/home/jnogcopy/Projects/c-engine/libs/adstore",
+    "output": "./build/out/list.o"
+  },
+  {
+    "file": "./src/main.c",
+    "arguments": [
+      "/usr/bin/g++",
+      "-Wall",
+      "-g",
+      "-Iinclude",
+      "-c",
+      "./src/main.c",
+      "-o",
+      "./build/out/main.o"
+    ],
+    "directory": "/home/jnogcopy/Projects/c-engine/libs/adstore",
+    "output": "./build/out/main.o"
+  }
+]
